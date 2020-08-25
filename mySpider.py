@@ -132,6 +132,6 @@ def baidu(page):
 
 
 # 一般当天新闻10页左右即可爬完，可根据需求增加页数
-for i in range(15):
+for i in range(10):
     baidu(i + 1)
     print('第' + str(i + 1) + '页爬取成功')
