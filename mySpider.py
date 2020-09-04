@@ -102,7 +102,11 @@ def baidu(page):
         'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) '
                       'Chrome/69.0.3497.100 Safari/537.36'}
     num = (page - 1) * 10
-    url = 'https://www.baidu.com/s?tn=news&rtt=4&bsst=1&cl=2&wd=' + word + '&pn=' + str(num) + '.html'
+
+    url = 'https://www.baidu.com/s?ie=utf-8&medium=0&rtt=1&bsst=1&rsv_dl=news_t_sk&cl=2&wd=' + word + \
+          '%BE&tn=news&rsv_bp=1&rsv_sug3=1&rsv_sug1=1&rsv_sug7=100&rsv_sug2=0&oq=&rsv_btype=t&f=8&inputT=3&rsv_sug4' \
+          '=835&rsv_sug=1&pn=' + str(num)
+
     res = requests.get(url, headers=headers).text
 
     p_href = '<h3 class="news-title_1YtI1">.*?<a href="(.*?)"'
