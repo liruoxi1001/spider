@@ -13,7 +13,7 @@ for line in f1.readlines():
 
 jieba.load_userdict("userdict.txt")
 
-title = "Filecoin是否是区块链新的投资机会丨区块链项目投资标准"
+title = "小白课堂 | 区块链里的智能合约VS传统合约"
 
 result = jieba.lcut(title, HMM=False)
 print('分割形式', result)
