@@ -9,7 +9,7 @@ word = input("请输入想要搜索的关键词： ")
 # 创建csv
 f = open('results.csv', 'w', encoding='utf-8', newline='')
 csv_writer = csv.writer(f)
-csv_writer.writerow(["日期", "标题", "涉及方", "涉及方类型", "细分行业", "行业类型", "链接"])
+csv_writer.writerow(["日期", "标题", "涉及方", "涉及方类型", "抓取词语", "细分行业", "链接"])
 
 jieba.load_userdict("userdict.txt")
 

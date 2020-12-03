@@ -13,7 +13,7 @@ for line in f1.readlines():
 
 jieba.load_userdict("userdict.txt")
 
-title = "小白课堂 | 区块链里的智能合约VS传统合约"
+title = "小白课堂 | 区块链里的数字货币"
 
 result = jieba.lcut(title, HMM=False)
 print('分割形式', result)
@@ -33,5 +33,3 @@ if not stop_dict and not write_dict:
 
 print('行业类型分类', write_dict)
 
-sen = '区块链<\em>部门例会'
-print(sen.replace('<\em>', ''))
